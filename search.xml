@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>如何制作自己的博客</title>
+    <url>/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>相信大家在进入这样一个个人网页之后，就会想要知道如何搭建出这样一个属于自己的网页</p>
+<h2 id="软件需求"><a href="#软件需求" class="headerlink" title="软件需求"></a>软件需求</h2><h3 id="node-js"><a href="#node-js" class="headerlink" title="node js"></a>node js</h3><p>node js 这个软件相信大家都不陌生，安装他主要是为了安装很多的库，白叔第一次接触它实在python课上，我们要完成这个网页也需要很多的库，所以这是第一个需要下载的软件<br>下载地址：<a class="link" href="https://nodejs.org/en/">点我进入 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/nodejs_page.png" alt="首页图片"><br>如上图所示，大家自己下载适合自己的版本</p>
+<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>对于git这个软件，大家肯定更加熟悉了，它是一个分布式版本控制系统，具体的白叔也不知道了，直接上链接<br>下载地址：<a class="link" href="https://git-scm.com/">点我进入 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/git1.png" alt="首页图片"><br>点击图中的下载按钮<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/git2.png" alt="首页图片"><br>下载完成之后，运行安装，没有个人特殊习惯直接无脑下一步就行</p>
+<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>大家从网页下面不难发现，该网页POWERED BY Hexo，所以Hexo也是必须安装的，那么接下来用上面两个软件来安装Hexo<br>首先在你的电脑上创建创建一个文件夹名为“hexo”<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/hexo1.png" alt="首页图片"><br>点击进入文件夹，然后右键选择Git Bash Here<br>接下来进入<a class="link" href="https://hexo.io/zh-cn/">Hexo官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/hexo2.png" alt="首页图片"><br>在打开的Git Bash Here窗口中依次输入以下代码</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+<p>最后一个代码”hexo server”是指运行hexo，可以简写为”hexo s”<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/hexo3.png" alt="首页图片"><br>之后咱们复制图中的网址进入浏览器就可以访问了（不要用Ctrl和C复制，用鼠标，不然就关了）</p>
+<h2 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>还是在刚刚的文件夹中咱们输入</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;文章标题（你自己可以改）&quot;</span><br></pre></td></tr></table></figure></div>
+<p>回车之后即可创建一篇文章，可在source&#x2F;_posts中看到这篇文章，这篇文章采用的是MD语法，具体大家可以百度一下</p>
+<h3 id="编写文章"><a href="#编写文章" class="headerlink" title="编写文章"></a>编写文章</h3><p>咱们点击以md为后缀的文件，就可以进行文件的编写，具体的编写格式，大家可以参考一下csdn中这位大佬的文章<br>链接：<a class="link" href="https://blog.csdn.net/wsmrzx/article/details/81478945?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-81478945-blog-120479912.pc_relevant_vip_default&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-81478945-blog-120479912.pc_relevant_vip_default&utm_relevant_index=1">大佬的文章 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>在文章编写好了之后保存就可以了</p>
+<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><p>依旧是右键选择Git Bash Here<br>然后输入下面代码（也就是生成静态网页）</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></div>
+<p>之后在开启hexo</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
+<p>然后访问网站就可以看到我们的这篇文章了<br>##总结<br>这篇文章也是我的第一篇文章，白叔是一个喜欢玄学的大学生，以后的博客里面呢，可能就更新一些关于计算机的有趣事物或者是我在算卦（我主要用梅花和六爻）方面的经验<br>除此之外呢，我也是第一次搭建自己的博客嘛，这篇文章也是有很多问题，后续我可能会慢慢的更改这些文章，希望大家能喜欢吧。拜拜了诸位！</p>
+]]></content>
+      <categories>
+        <category>计算机技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何使用油猴脚本抢课</title>
+    <url>/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/</url>
+    <content><![CDATA[<p>这篇博客是给学弟学妹们写的，为了方便大家抢课（悄悄滴，打枪的不要！）</p>
+<h2 id="抢课脚本安装"><a href="#抢课脚本安装" class="headerlink" title="抢课脚本安装"></a>抢课脚本安装</h2><p>首先进入你们的浏览器，点击右上角三个点选择拓展然后开启<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/1.png" alt="首页图片"><br>开启之后如下图所示，点击图中箭头处获取拓展<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/2.png" alt="首页图片"><br>点击之后进入下图，在左边搜索框中输入tampermonkey搜索，然后点击右边的第一个绿色图标下面的获取<br>Tips:我这里已经安装了，所以显示的是删除<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/3.png" alt="首页图片"><br>然后点击添加拓展（我以第二个举例）<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/4.png" alt="首页图片"><br>安装好了之后回到拓展管理页面开启油猴<br>如下图所示<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/5.png" alt="首页图片"><br>之后浏览器右上角就会出现那个图标，点击图标，选择获取新脚本<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/6.png" alt="首页图片"><br>在转跳的新页面搜索框中输入swust点击搜索<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/7.png" alt="首页图片"><br>选择swust抢课点击安装（我已经安装了，所以显示更新）<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/8.png" alt="首页图片"><br>弹出来的页面中再次点击安装</p>
+<h2 id="抢课脚本使用"><a href="#抢课脚本使用" class="headerlink" title="抢课脚本使用"></a>抢课脚本使用</h2><p><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/9.png" alt="首页图片"><br>安装之后进入我们的教务系统，选课界面，这时候就会弹出如图的两个框<br>左下角的是信息输出，右上角的框可以自己添加想要的课程<br><img lazyload src="/images/loading.svg" data-src="/2023/03/01/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E6%8A%A2%E8%AF%BE/10.png" alt="首页图片"><br>然后点击开始抢课即可</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>白叔刚开始不懂这个，然后花了20冤枉钱去让别人帮忙抢党课，而且有很多小人抢了很多课来卖，这是不道德的，所以写这篇博客让大家能够自己学会抢课，同时也希望看到这篇文章的都是君子而非小人，那么 拜拜啦！诸位！</p>
+]]></content>
+      <categories>
+        <category>计算机技术</category>
+      </categories>
+  </entry>
+</search>
